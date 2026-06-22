@@ -1,0 +1,1670 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+:root {
+  --azul:#222DE3;
+  --celeste:#67C6F0;
+  --azuloscuro:#06097A;
+  --blanco:#FFFFFF;
+  --negro:#000000;
+  --azuloscuro2:#0C2038;
+  --gris: #555555;
+  --contraste: #75F791;
+  --naranja: #cc8220;
+  --naranjaoscuro: #5e3b0e;
+  
+  --fondo-blanco: #ffffff;      
+  --fondo-gris-claro: #e0e1dd;  
+  --fondo-oscuro-bloque: #1b263b; 
+
+  --color-accion: #778da9;      
+  
+  --texto-titulos: #0d1b2a;     
+  --texto-parrafos: #334155;    
+  --texto-blanco: #ffffff;        
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*--------------NAV-----------------------------------------------------*/
+    nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #fff;
+      padding: 60px 70px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 4px solid;
+     border-bottom-color: var(--azul);
+     transition: top 0.4s ease;
+    }
+
+    nav > a img {
+      display: block;
+      width: 150px !important;
+      max-width: 38vw;
+      height: auto !important;
+    }
+
+    .nav-logo span {
+      color: var(--blanco);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: var(--negro);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.4s;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 20px;
+    }
+
+    .nav-links li a:hover {
+      color: var(--azuloscuro);
+      background-color: #00000011;
+      
+    }
+
+
+.adonar {
+  padding: 10px;
+  background-color: var(--azul);
+  border-radius: 5px;
+  color: var(--blanco) !important;
+}
+.adonar:hover {
+  background-color: #191818;
+  color: #333af6
+}
+/*--------------INICIO-----------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria {
+    position: relative;
+    width: 100%;
+}
+
+.slides-container {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.763); 
+    z-index: 1; 
+}
+
+.contenido-slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    z-index: 2; 
+}
+
+
+.contenido-slide .subtitulo {
+    color: #3b51a3; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenido-slide h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.contenido-slide .descripcion {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.btn-accion {
+    background-color: #0c127a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#botonAnt, #botonSig {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    color: white;
+}
+
+.linkgaleria {
+  background-color: var(--azul);
+  padding: 16px;
+  border-radius: 10px;
+text-decoration: none;
+color: var(--blanco);
+}
+
+.linkgaleria :hover {
+  background-color: var(--azuloscuro2);
+}
+
+
+/*------------------------IMPACTO----------------------------------------*/
+.pimpacto {
+ text-align: center;
+ font-size: 29px;
+ color: #6c6767be;
+}
+.divimpacto {
+justify-content: center;
+display: flex;
+}
+.divimpacto p {
+  font-size: 20px;
+}
+.divhero h2 {
+  font-size: 15px;
+  font-weight:100;
+  color: #6c6767be;
+}
+.divhero {
+  align-items: center;
+  text-align: center;
+  padding: 1px 20px;
+}
+.divhero span {
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  font-weight: 800;
+  color: var(--azuloscuro);
+}
+
+.divinfo {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.divlineadelgada {
+  background-color: var(--azuloscuro);
+  padding: 1px 0.8px;
+  display: inline-block;
+}
+
+
+
+.div2 {
+  max-width: 500px;
+letter-spacing: 1px;
+}
+
+.div1 {
+  max-width: 300px;
+  font-size: 29px;
+}
+
+/*------------------------MISION----------------------------------------*/
+
+.divmision {
+  display: flex;
+  align-items: flex-start;      
+  justify-content: center;  
+  gap: 130px;                
+  padding: 80px 10%;        
+  background-color: var(--blanco); 
+}
+
+.divtitulo h1 {
+  font-size: 32px;
+  color: var(--negro);          
+  margin: 0;
+}
+
+.divlinea {
+  background-color: var(--azuloscuro);
+  padding: 2.5px 35px;
+  display: inline-block;
+}
+
+.divfoto {
+  flex: 1;
+  max-width: 500px;         
+}
+
+.divfoto img {
+  width: 600px;
+  height: 600px ;  
+  display: block;
+  border-radius: 2px;       
+}
+
+
+.divparrafo {
+  flex: 1;
+  max-width: 550px;         
+  text-align: left;  
+}
+
+.divprimerp p {
+  font-size: 18px;
+  font-weight: 600;         
+  color: #454343;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.divseugndop p {
+  font-size: 16px;
+  color: #666666;          
+  line-height: 1.7;         
+  margin: 0;
+}
+
+.linkleermas {
+  text-align: center;
+}
+
+
+.linkleermas a
+{
+  text-align: center;
+  padding: 12px 30px;
+  background-color: var(--azuloscuro);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+ text-decoration: none;
+ color: var(--blanco);
+}
+
+.linkleermas :hover {
+  background-color: var(--azuloscuro2);
+}
+/*------------------------QUE HACEMOS----------------------------------------*/
+
+.quehacemosdiv {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #ffffff;
+}
+
+
+.divlinea2 {
+  width: 50px;
+  height: 4px;
+  background-color: var(--azuloscuro);
+  margin: 0 auto 15px auto; 
+}
+
+.quehacemosh1 h1 {
+  font-size: 32px;
+  color: var(--negro);
+  margin-bottom: 40px;
+}
+
+
+.quehacemosejemplos {
+  display: flex;
+  justify-content: center; 
+  gap: 30px;               
+  width: 100%;
+}
+
+
+.ejemplo {
+  flex: 1;                
+  max-width: 350px;        
+  text-align: left;       
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 3px 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;        
+}
+
+
+.ejemplo img {
+  width: 100%;
+  height: 200px;           
+  object-fit: cover;     
+}
+
+.ejemplo .fecha {
+  display: block;
+  font-size: 14px;
+  color: #666666;
+  margin: 15px 15px 10px 15px; 
+}
+
+.ejemplo h3 {
+  font-size: 18px;
+  color: #1d1c1c;
+ margin: 0 15px 15px 15px;
+  font-weight: 700;
+}
+
+.ejemplo p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.6;
+  margin: 0 14px 20px 14px;
+}
+.leermas {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.leermas:hover .ejemplo img {
+  transform: scale(1.08);
+}
+
+.leermas:hover .ejemplo {
+  transform: translateY(-6px);
+  box-shadow: 3px 10px 20px rgba(0,0,0,0.3);
+}
+
+/************************MINIHERO*/
+.divminihero {
+display: flex; 
+justify-content: center; 
+margin-bottom: 100px; ;
+flex-direction: column;
+align-items: center;
+}
+.miniherotexto {
+   text-align: center;
+   align-items: center;
+ font-size: 24px;
+ color: #6c6767be;
+ max-width: 1200px;
+}
+
+
+
+
+ /* ============================================
+       FOOTER
+    ============================================ */
+    footer {
+      background-color: var(--azuloscuro2);
+      padding: 64px 48px 32px;
+    }
+
+    .footer-inner {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1.5px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-marca {
+      flex: 1.5;
+      min-width: 220px;
+    }
+
+    .footer-logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--blanco);
+      margin-bottom: 14px;
+    }
+
+    .footer-logo span {
+      color: var(--verde);
+    }
+
+    .footer-marca p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+
+    .footer-col {
+      flex: 1;
+      min-width: 140px;
+    }
+
+    .footer-col h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-col ul li a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--verde);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer-redes {
+      display: flex;
+      gap: 14px;
+    }
+
+    .red-social {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+    }
+
+    .red-social:hover {
+      background-color: var(--azul);
+    }
+  /*--------------------------------------------------------------------------
+                            SOBRE NOSOTROS
+  -------------------------------------------------------------------------------------*/
+
+  /*------------------------HISTORIA----------------------------------------*/
+.iniciosectionsobrenosotros {
+      padding-bottom: 30px;
+      padding: 140px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(imagenes/muchos\ chicos\ con\ con\ una\ computadora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divhistoria {
+  display: flex;
+  align-items: flex-start;      
+  justify-content: center;  
+  gap: 130px;                
+  padding: 80px 10%;        
+  background-color: var(--blanco); 
+}
+.divlinea {
+  background-color: var(--azuloscuro);
+  padding: 2.5px 35px;
+  display: inline-block;
+}
+
+.divfotohistoria {
+  flex: 1;
+  max-width: 500px;         
+}
+
+.divfotohistoria img {
+  width: 600px;
+  height: 500px ;  
+  display: block;
+  border-radius: 2px;       
+}
+
+
+.divparrafo {
+  flex: 1;
+  max-width: 550px;         
+  text-align: left;  
+}
+
+.divh1 h1 {
+  font-size: 32px;
+  color: #0b2545;           
+  margin: 0;
+}
+
+.divprimerphistoria p {
+  font-size: 18px;
+  font-weight: 600;         
+  color: var(--negro);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.divseugndop p {
+  font-size: 16px;
+  color: #666666;          
+  line-height: 1.7;         
+  margin: 0;
+}
+
+
+.divparrafoifnormacion p {
+  font-size: 20px; 
+  color: #6c6767be;
+  font-weight: 700; 
+  line-height: 2; 
+  text-align: center; 
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 40px 20px; 
+}
+
+/*------------------------IMAGEN----------------------------------------*/
+.divIMAGEN  {
+background-image: url(imagenes/chica\ para\ fondo.webp);
+width: 100%;
+height: 450px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+
+
+/*------------------------MVV----------------------------------------*/
+.divmvv {
+  display: flex;
+  align-items: center;      
+  justify-content: center;  
+  gap: 120px;                
+  padding: 80px 9%;        
+  background-color: var(--blanco); 
+}
+.divfotomvv {
+  flex: 1;
+  max-width: 500px;         
+}
+
+.divfotomvv img {
+  width: 500px;
+  height: 350px ; 
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;       
+}
+
+
+.divtextomvv {
+  flex: 1;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+.divlinea {
+  background-color: var(--azuloscuro);
+  width: 50px; 
+  height: 5px;
+}
+
+.divh1 h1 {
+  font-size: 32px;
+  color: #0b2545;           
+  margin: 0;
+}
+
+
+.divparrafomvv {
+  display: flex;
+  flex-direction: column;        
+  gap: 12px;
+}
+
+
+
+.divparrafomvv p {
+  font-size: 18px;
+  font-weight: 200;         
+  color: var(--gris);
+  line-height: 1.5;
+}
+
+
+/*------------------------VALORES----------------------------------------*/
+
+.divlineavalores {
+  background-color: var(--azuloscuro);
+  width: 50px; 
+  height: 5px;
+}
+.divtitulovalores {
+  margin: 20px 0;
+}
+.valoresdiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+  background-color: #e0d7d72b;
+  padding: 57px 0;
+}
+
+.divcontenedor {
+  display: flex;
+  gap: 80px;
+  margin-top: 55px;
+}
+
+.divvalores li {
+  margin: 30px;
+  font-size: 20px;
+  max-width: 800px;
+  list-style-type: none;
+}
+
+.ulvalores {
+  padding: 0;
+  margin: 0;
+}
+
+.ulvalores li {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--gris);
+  margin-bottom: 18px; 
+  position: relative;
+  padding-left: 35px; 
+}
+/*--------------------------------------------------------------------------
+                            CONTACTO
+  -------------------------------------------------------------------------------------*/
+body {
+    background-color: var(--blanco);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+.contacto-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    flex-direction: column;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.548); 
+    width: 100%;
+    max-width: 550px; 
+}
+.h1main {
+  color: var(--azuloscuro);
+  margin-bottom: 20px;
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: var(--azuloscuro2);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--azuloscuro2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; 
+    padding: 12px 16px;
+    font-size: 15px;
+    color: var(--texto);
+    background-color: #fff;
+    border: 1px solid var(--gris);
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+    height: 120px; 
+    resize: vertical; 
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--azul);
+    box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.15); 
+}
+
+.botones-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    flex: 1; 
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: var(--negro);
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--azul);
+    color: var(--negro);
+}
+
+input[type="reset"] {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+input[type="reset"]:hover {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+.div-CD {
+  display: flex;
+  align-items: flex-start;      
+  justify-content: center;  
+  gap: 130px;                
+  padding: 80px 10%;        
+  background-color: var(--blanco); 
+}
+
+.div-textoCD h1 {
+  font-size: 32px;
+  color: var(--negro);          
+  margin: 0;
+  margin-left: 7px;
+}
+.div-textoCD p {
+  margin-left: 7px;
+  max-width: 1000px;
+}
+.div-textoCD {
+  border-left: 3px solid var(--azuloscuro);
+}
+
+.divimgCD {
+  flex: 1;
+  max-width: 500px;         
+}
+
+.divimgCD img {
+  width: 600px;
+  height: 600px ;  
+  display: block;
+  border-radius: 2px;       
+}
+
+
+.div-textoCD {
+  flex: 1;
+  max-width: 800px;         
+  text-align: left;  
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------
+                            PROYECTOS
+  -------------------------------------------------------------------------------------*/
+
+/**************************************************INICIO******************************************/
+.inicioproyectos {
+      padding-bottom: 30px;
+      padding: 140px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(imagenes/reunion\ fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divinicio {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.h2titulo {
+  font-size: 47px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.divinicio p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 650px;
+  color:var(); 
+}
+
+/*//*************************************************CONTACTO****************************************************/
+.iniciocontacto {
+      padding-bottom: 30px;
+      padding: 140px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(./imagenes/fotocontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/**************************************NUESTRO TRABAJO****************************************************/
+.nuestro-trabajo-seccion {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.nuestro-trabajo-seccion h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0d1b2a; 
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+
+.divproyectospadre {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.divproyectos1, .divproyectos2 {
+  display: flex;
+  gap: 20px; 
+}
+
+.tarjeta-proy {
+  display: flex;
+  align-items: flex-end; 
+  justify-content: flex-start; 
+  flex: 1; 
+  height: 280px; 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-proy:hover {
+  transform: scale(1.02);
+}
+
+.cartel-proyecto {
+  background-color: var(--blanco);
+  color: var(--azuloscuro2);
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  max-width: 90%; 
+  margin-left: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/*[-----------------------------------------------------------------------------------------------------------
+                                   PROYECTOS                                          
+---------------------------------------------------------------------------------------------------------]
+
+-----------------------------------------------laboratorio-------------------------------------*/
+
+.sectionproyecto {
+        padding-bottom: 30px;
+      padding: 140px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 11, 0.8)),url(/imagenes/ninio\ estudiando\ computadora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.divproyecto {
+  text-align: center;
+  color: var(--blanco);
+  padding: 20px;
+}
+
+.h1proyecto {
+  color: var(--blanco);
+  font-weight: 200;
+  font-size: 25px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 15px;
+}
+/*****************************************************************************************/
+.div-ancho-completo {
+  max-width: 1260px;
+  margin: 40px 35px; 
+  padding: 0px 60px;
+}
+
+.div-ancho-completo h1, .div-ancho-completo h2 {
+  color: var(--texto-titulos);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.div-ancho-completo p {
+  margin-bottom: 22px;
+  line-height: 1.5;
+  color: var(--texto-parrafos);
+  font-size: 18px;
+  text-align: left;
+}
+
+
+.divinformacion {
+  display: flex;
+  align-items: flex-start;      
+  justify-content: center;  
+  gap: 60px;                
+  padding: 70px 8%;
+  background-color: var(--blanco); 
+  border-bottom: 1px solid var(--negro);
+  
+}
+
+.nose p {
+  font-size: 17px; 
+  line-height: 1.8; 
+  text-align: left;
+}
+
+.noseimg img {
+  width: 450px;
+  height: 300px;
+}
+
+.divlinealaboratorio {
+  border-bottom: 2px solid var(--negro);
+}
+
+
+
+
+
+
+
+.slides img {
+    display: none;
+   }
+
+  .active {
+            display: block !important;
+        }
+
+        .slides {
+            height: 80vh;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .galeria {
+            position: relative;
+        }
+
+        button {
+            position: absolute
+        }
+
+        #botonAnt {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #botonSig {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+/*****************************INICIO PROYECTOS***************************************************************/
+
+.sectionbeca {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/beca.webp);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sectiondonacion {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/donacion.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.sectionewaste {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/ewaste.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sectionjubilados {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/ancianos\ usando\ computadoras.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sectionrenovacion {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/software\ libre\ aulta\ de\ computadoras.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sectionsanmartin {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.sectionsoftware {
+ padding-bottom: 30px;
+ padding: 140px 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+position: relative;
+overflow: hidden;
+background-image: linear-gradient(rgba(1, 0, 6, 0.7), rgba(2, 1, 13, 0.8)),url(proyectosimg/software\ libre\ aulta\ de\ computadoras.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* --- ESTILOS PARA EL MENÚ HAMBURGUESA (Flexnav) --- */
+.menu-toggle {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--azul);
+}
+
+/* ========================================================= */
+/* --- RESPONSIVE: CELULARES (Máximo 600px) --- */
+/* ========================================================= */
+@media (max-width: 992px) {
+    nav {
+        padding: 14px 24px;
+        height: auto;
+        min-height: 78px;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        line-height: 1;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 13px 10px;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+
+    .slides-container {
+        height: 72vh;
+        min-height: 430px;
+    }
+
+    .contenido-slide {
+        width: calc(100% - 56px);
+    }
+
+    .contenido-slide h1 {
+        font-size: 2.25rem;
+        line-height: 1.15;
+    }
+
+    #botonAnt,
+    #botonSig {
+        padding: 8px;
+        font-size: 1.15rem;
+    }
+
+    .divimpacto,
+    .quehacemosejemplos,
+    .divcontenedor {
+        flex-wrap: wrap;
+    }
+
+    .divimpacto {
+        gap: 28px;
+        padding: 0 24px;
+    }
+
+    .divhero {
+        flex: 1 1 220px;
+    }
+
+    .pimpacto {
+        padding: 0 24px;
+        font-size: 1.55rem;
+        line-height: 1.5;
+    }
+
+    .pimpacto br {
+        display: none;
+    }
+
+    .divinfo,
+    .divmision,
+    .divhistoria,
+    .divmvv,
+    .div-CD,
+    .divinformacion {
+        flex-direction: column;
+        gap: 36px;
+        padding: 56px 7%;
+    }
+
+    .div1,
+    .div2,
+    .divparrafo,
+    .divtextomvv,
+    .div-textoCD,
+    .nose,
+    .noseimg {
+        width: 100%;
+        max-width: none;
+    }
+
+    .divfoto,
+    .divfotohistoria,
+    .divfotomvv,
+    .divimgCD {
+        width: 100%;
+        max-width: none;
+    }
+
+    .divfoto img,
+    .divfotohistoria img,
+    .divfotomvv img,
+    .divimgCD img,
+    .noseimg img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 520px;
+        object-fit: cover;
+    }
+
+    .quehacemosejemplos {
+        align-items: stretch;
+    }
+
+    .leermas {
+        flex: 1 1 280px;
+        max-width: 420px;
+    }
+
+    .ejemplo {
+        max-width: none;
+        height: 100%;
+    }
+
+    .divminihero {
+        padding: 0 24px;
+    }
+
+    .divminihero > div:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .divminihero img {
+        flex: 1 1 calc(50% - 10px);
+        width: calc(50% - 10px) !important;
+        min-width: 220px;
+        height: auto !important;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .miniherotexto {
+        font-size: 1.25rem;
+        line-height: 1.55;
+    }
+
+    .iniciosectionsobrenosotros,
+    .inicioproyectos,
+    .iniciocontacto,
+    .sectionproyecto,
+    .sectionbeca,
+    .sectiondonacion,
+    .sectionewaste,
+    .sectionjubilados,
+    .sectionrenovacion,
+    .sectionsanmartin,
+    .sectionsoftware {
+        height: 430px;
+        padding: 100px 28px;
+    }
+
+    .divproyectos1,
+    .divproyectos2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-proy {
+        flex: 1 1 calc(50% - 20px);
+        min-height: 240px;
+    }
+
+    .div-ancho-completo {
+        max-width: 100%;
+        margin: 32px auto;
+        padding: 0 7%;
+    }
+
+    .div-ancho-completo iframe,
+    .div-ancho-completo img {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .div-ancho-completo iframe {
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    footer {
+        padding: 48px 28px 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 16px;
+        min-height: 70px;
+    }
+
+    nav > a img {
+        width: 118px !important;
+    }
+
+    .slides-container {
+        height: 68vh;
+        min-height: 390px;
+    }
+
+    .contenido-slide {
+        width: calc(100% - 40px);
+    }
+
+    .contenido-slide .subtitulo,
+    .contenido-slide .descripcion {
+        font-size: 1rem;
+    }
+
+    .contenido-slide h1,
+    .h2titulo {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .linkgaleria,
+    .linkleermas a {
+        padding: 12px 18px;
+    }
+
+    .pimpacto {
+        font-size: 1.15rem;
+    }
+
+    .divhero span {
+        font-size: 2.35rem;
+    }
+
+    .div1 {
+        font-size: 1.45rem;
+    }
+
+    .divmision,
+    .divhistoria,
+    .divmvv,
+    .div-CD,
+    .divinformacion,
+    .quehacemosdiv {
+        padding: 42px 20px;
+    }
+
+    .divminihero > div:first-child,
+    .divproyectos1,
+    .divproyectos2 {
+        flex-direction: column;
+    }
+
+    .divminihero img,
+    .tarjeta-proy {
+        width: 100% !important;
+        flex-basis: 100%;
+        min-width: 0;
+    }
+
+    .divcontenedor {
+        flex-direction: column;
+        gap: 0;
+        padding: 0 20px;
+    }
+
+    .ulvalores li {
+        font-size: 1rem;
+        padding-left: 0;
+        margin-bottom: 14px;
+    }
+
+    .tarjeta-proy {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .cartel-proyecto {
+        font-size: 0.9rem;
+    }
+
+    .h1proyecto {
+        font-size: 1.55rem;
+        letter-spacing: 0;
+        line-height: 1.25;
+    }
+
+    .div-ancho-completo {
+        padding: 0 20px;
+    }
+
+    .div-ancho-completo p,
+    .nose p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    form {
+        padding: 28px 20px;
+    }
+
+    .botones-container,
+    .footer-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer-inner {
+        gap: 28px;
+    }
+}
+/* ========================================================= */
+/* --- PARCHE DE CORRECCIÓN PARA PANTALLAS DE COMPU --- */
+/* ========================================================= */
+
+nav a img, .nav img, header img {
+    height: 120px !important; 
+    width: 150px !important;  
+    background: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important;
+}
+
+nav a[href="dona.html"], 
+nav a[href="donacion.html"],
+.linkgaleria, 
+.btn-donar {
+    background-color: #0056b3 !important; 
+    transition: background-color 0.3s ease;
+}
+
+nav a[href="dona.html"]:hover, 
+nav a[href="donacion.html"]:hover,
+.linkgaleria:hover, 
+.btn-donar:hover {
+    background-color: #000000 !important; 
+    color: white !important;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+                              DONAR                            
+-------------------------------------------------------------------------------------------------------*/

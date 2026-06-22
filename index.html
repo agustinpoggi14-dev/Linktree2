@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustin Poggi | Linktree</title>
+    <style>
+        /* Reset universal */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Fondo general de la página con un degradado sutil */
+        body {
+            background: linear-gradient(135deg, #090714, #2a1e63);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Contenedor principal - Ajustamos el fondo para que no sea tan oscuro */
+        main {
+            width: 100%;
+            max-width: 450px; /* Tamaño ideal para simular un celular */
+            background-color: #1a153b; /* Un violeta/azul oscuro con más vida */
+            border-radius: 28px;
+            padding: 40px 24px;
+            text-align: center;
+            box-shadow: 0px 15px 35px rgba(77, 76, 76, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil brillante */
+        }
+
+        /* Foto de perfil redonda impecable */
+        header img {
+            border-radius: 50%;
+            object-fit: cover; /* Evita que la foto se deforme o estire */
+            border: 3px solid #5a4cb1; /* Anillo de color alrededor de la foto */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin-bottom: 16px;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        header h2 {
+            color: #9d92ff;
+            font-size: 13px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 32px;
+        }
+
+        /* Lista de botones principales */
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: block;
+        }
+
+        /* El contenedor interno del botón - Ajustado para centrar perfecto */
+        nav .btn-content {
+            background-color: #272055; /* Color que contrasta con el fondo de la caja */
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            height: 60px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Centrado perfecto del texto */
+        nav .btn-content span {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            width: 100%; /* Ocupa el 100% del botón para que el center sea real */
+        }
+
+        /* Efecto cuando pasas el mouse por encima de los links */
+        nav ul li a:hover .btn-content {
+            background-color: #3b317c;
+            border-color: #8b80f9;
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(139, 128, 249, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <img src="amigos.jpeg" width="160" height="160" alt="Avatar">
+            <h1>Agustin Poggi</h1>
+            <h2>Estudiante</h2>
+        </header>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="identikit/index.html">
+                        <div class="btn-content">
+                            <span>Identikit</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="ONG/index.html">
+                        <div class="btn-content">
+                            <span>ONG</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="btn-content">
+                            <a href="https://github.com/"><span>Repositorio GITHUB</span></a>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+</body>
+
+</html>

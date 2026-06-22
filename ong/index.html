@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacion Desarrollo|</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"  href="imagenes/logo solo.png" type="image/png">
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+  <nav>
+    <a href="index.html"> <img src="imagenes/logo completo.png" class="aimagenlogo"></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre nosotros.html">Sobre nosotros</a></li>
+      <li><a href="Proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="dona.html" class="adonar">DONÁ</a></li>
+    </ul>
+  </nav>
+<!-- ============ inicio ============ -->
+<section class="galeria">
+    <div class="slides-container">
+        
+        <div class="slide active">
+            <picture>
+                <source media="(max-width: 600px)" srcset="./imagenes/educacion con tecnologia.webp">
+                <source media="(max-width: 1024px)" srcset="./imagenes/educacion con tecnologia.webp">
+                <img src="./imagenes/educacion con tecnologia.webp" alt="Fondo 1">
+            </picture>
+            
+            <div class="contenido-slide">
+                <p class="subtitulo">Creamos futuros</p>
+                <h1>Tú también puedes ayudar</h1>
+                <p class="descripcion">Con tu colaboración lograremos que más gente tenga computadoras</p>
+                <a href="dona.html" class="linkgaleria" style="color: white;">Dona</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagenes/chicos estudiando fondo.avif">
+                <source media="(max-width: 1024px)" srcset="imagenes/chicos estudiando fondo.avif">
+                <img src="imagenes/chicos estudiando fondo.avif" alt="Fondo 2">
+            </picture>
+            
+            <div class="contenido-slide">
+                <p class="subtitulo">Reduciendo la brecha</p>
+                <h1>Fundacion Desarrollo</h1>
+                <p class="descripcion">Transformamos equipos en desuso en herramientas de aprendizaje para escuelas rurales.</p>
+                <a href="Proyectos.html" class="linkgaleria">Ver proyectos</a>
+            </div>
+        </div>
+
+        <div class="slide">
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagenes/reunion3.jpg">
+                <source media="(max-width: 1024px)" srcset="imagenes/reunion3.jpg">
+                <img src="imagenes/reunion3.jpg" alt="Fondo 3">
+            </picture>
+            
+            <div class="contenido-slide">
+                <p class="subtitulo">Conocenos</p>
+                <h1>Únete a la causa</h1>
+                <p class="descripcion">Investiga quienes somos y unete a nosotros</p>
+                <a href="sobre nosotros.html" class="linkgaleria">Sobre nosotros</a>
+            </div>
+        </div>
+
+    </div>
+    <button id="botonAnt" onclick="anterior()"> ◀ </button>
+    <button id="botonSig" onclick="siguiente()"> ▶ </button>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+<!-- ============ impacto ============ -->
+<section>
+    <p class="pimpacto">
+        Recuperamos, reparamos y <b>distribuimos</b> tecnología donde más se necesita, 
+        <br>transformando donaciones de componentes en <b>oportunidades</b> de formación y conectividad <br>para <b>comunidades locales</b>.
+      </p>
+  <section class="impacto-franja" id="impacto">
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div class="divimpacto">
+    <div class="divhero">
+       <img src="imagenes/icono computadora.jpeg" alt="" style="width: 100px; height: 100px;">
+       <br>
+        <span>+500</span>
+        <br>
+        <p>PCs restauradas</p>
+        <br>
+        <h2>Equipos  recuperados <br> y listos para su reutilización.</h2>
+    </div>
+    <div class="divhero">
+         <img src="imagenes/icono empresa.jpeg" alt="" style="width: 100px; height: 100px;">
+         <br>
+        <span>+120</span>
+        <br>
+        <p>Empresas donantes</p>
+        <br>
+        <h2>Organizaciones privadas comprometidas <br>con la reducción tecnológica.</h2>
+</div>
+    <div class="divhero">
+        <img src="imagenes/icono escuela.jpeg" alt="" style="width: 100px; height: 100px;">
+        <br>
+        <span>+80</span>
+        <br>
+        <p>Escuelas beneficiadas</p>
+        <br>
+        <h2>Instituciones públicas que cuentan <br>con laboratorios digitales.</h2>
+    </div>
+        <div class="divhero">
+        <img src="imagenes/icono e-waste.jpeg" alt="" style="width: 100px; height: 100px;"> 
+        <br>
+        <span>+3 tn</span>
+        <br>
+        <p>E-waste rescatado</p>
+        <br>
+        <h2>Toneladas de residuos que evitamos <br>que contaminen los basurales.</h2>
+    </div>
+</div>
+  </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="divinfo">
+  <div class="divlineadelgada">    </div>
+  <div class="div1">
+    <p><b>Creemos en la tecnología como un medio fundamental para transformar Latinoamérica en una región más justa, equitativa e inclusiva.</b></p>
+  </div>
+  <div class="div2">
+    <p>Coordinamos y potenciamos iniciativas existentes y generamos proyectos propios enfocados en los usos educativos de la tecnología. Así, impulsamos una comunidad profesional y audaz que trabaja para multiplicar la transformación y el conocimiento útil sobre la inclusión digital.</p>
+    <br>
+    <br>
+    <h4>Somos una plataforma de impacto tecnológico y social para Latinoamérica.</h4>
+    <br>
+    <br>
+    <p>Operamos actualmente en Argentina (Redes de Reciclaje Sustentable), Colombia (Aulas Digitales Libres), Uruguay (Ecosistema Circular), México (Tecnología Para Todos), con planes inmediatos de expansión a otros países de la región y el mundo. </p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- ============ mision breve ============ -->
+<div class="divmision">
+
+  <div class="divfoto">
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagenes/recursos electronicos.jpg">
+        <source media="(max-width: 1024px)" srcset="imagenes/recursos electronicos.jpg">
+        <img src="imagenes/recursos electronicos.jpg" alt="">
+    </picture>
+  </div>
+
+ <div class="divparrafo">
+  <div class="divlinea">     </div>
+    <div class="divtitulo"><h1>Nuestra Mision</h1></div>
+    <br>
+    <div class="divprimerp">
+      <p>Transformar residuos electrónicos en oportunidades educativas mediante la restauración de hardware solidario, acortando la brecha digital y promoviendo la economía circular en nuestras comunidades.</p>
+    </div>
+    <br>
+    <br>
+    <div class="divseugndop">  
+    <p>  Fundación Desarrollo nace con el propósito central de reactivar tecnología para conectar personas con su futuro. Ante una realidad donde los residuos electrónicos (e-waste) representan uno de los mayores focos de contaminación global, y donde miles de estudiantes carecen de las herramientas básicas para integrarse al mundo digital, nuestra organización actúa como un puente logístico y técnico.Recolectamos equipos obsoletos o en desuso del sector corporativo, los reparamos minuciosamente en nuestro taller profesional y los redistribuimos en centros comunitarios y escuelas rurales. De esta manera, garantizamos una gestión ambientalmente responsable para las empresas y una infraestructura tecnológica real para la formación y el empleo del mañana.</p>
+     </div>
+     <br>
+     <br>
+     <div class="linkleermas">
+      <a href="sobre nosotros.html">Mas sobre nosotros</a>
+     </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- ============ que hacemos ============ -->
+<div class="quehacemosdiv">
+  <div class="divlinea2"></div>
+  <div class="quehacemosh1"><h1>Qué estamos haciendo</h1></div>
+
+  <div class="quehacemosejemplos">
+
+     <a href="proyectos/donacion.html" class="leermas"><div class="ejemplo">
+      <picture>
+        <source media="(max-width: 600px)" srcset="proyectosimg/donacion.jpg">
+        <source media="(max-width: 1024px)" srcset="proyectosimg/donacion.jpg">
+        <img src="proyectosimg/donacion.jpg" alt="Niño estudiando">
+      </picture>
+      <span class="fecha">15 de abril de 2026</span> <h3>Donación de equipos reacondicionados</h3>
+      <p>Nuestra campaña solidaria distribuye computadoras recuperadas a familias vulnerables para asegurar su continuidad pedagógica. Los técnicos configuran entornos educativos abiertos, permitiendo que los niños accedan a herramientas informáticas críticas para su escuela, rompiendo barreras económicas y fomentando la equidad digital en los barrios populares de nuestra querida provincia.</p>
+    </div>
+      </a>
+     <a href="proyectos/ewaste.html" class="leermas"><div class="ejemplo">
+      <picture>
+        <source media="(max-width: 600px)" srcset="proyectosimg/ewaste.jpg">
+        <source media="(max-width: 1024px)" srcset="proyectosimg/ewaste.jpg">
+        <img src="proyectosimg/ewaste.jpg" alt="Niño estudiando">
+      </picture>
+      <span class="fecha">28 de marzo de 2026</span> <h3>Puntos de reciclaje de basura electrónica</h3>
+      <p>Instalamos nodos de recolección urbana para gestionar residuos tecnológicos obsoletos mediante normas estrictas de economía circular. Los voluntarios clasifican carcasas plásticas y componentes químicos peligrosos, evitando la contaminación crítica de los suelos locales y transformando la chatarra dañada en verdaderos recursos sustentables para la comunidad regional asi poder conseguir el objetivo comun.</p>
+    </div>
+      </a>
+
+     <a href="proyectos/beca.html" class="leermas"><div class="ejemplo">
+      <picture>
+        <source media="(max-width: 600px)" srcset="proyectosimg/beca.webp">
+        <source media="(max-width: 1024px)" srcset="proyectosimg/beca.webp">
+        <img src="proyectosimg/beca.webp" alt="Niño estudiando">
+      </picture>
+      <span class="fecha">12 de febrero de 2026</span> <h3>Beca de conectividad para estudiantes</h3>
+      <p>Este programa social financia abonos mensuales de internet para alumnos de niveles secundarios y universitarios que cursan a distancia. La iniciativa cubre redes inalámbricas estables, garantizando la entrega a término de trabajos prácticos complejos y reduciendo drásticamente la deserción escolar por falta de recursos económicos en los hogares a lo largon de este tiempo.</p>
+    </div>
+      </a>
+  </div> 
+  <br>
+  <br>
+  <br>
+       <div class="linkleermas">
+      <a href="Proyectos.html">Mas proyectos</a>
+     </div>
+</div>
+<br>
+<br>
+<br>
+<div class="divminihero">
+  <div>
+  <picture>
+    <source media="(max-width: 600px)" srcset="imagenes/chicos estudiando fondo.avif">
+    <source media="(max-width: 1024px)" srcset="imagenes/chicos estudiando fondo.avif">
+    <img src="imagenes/chicos estudiando fondo.avif" alt="" style="width: 340px; height: 210px;">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="imagenes/chicos estudiando.avif">
+    <source media="(max-width: 1024px)" srcset="imagenes/chicos estudiando.avif">
+    <img src="imagenes/chicos estudiando.avif" alt="" style="width: 374px;">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="imagenes/muchos chicos con con una computadora.jpg">
+    <source media="(max-width: 1024px)" srcset="imagenes/muchos chicos con con una computadora.jpg">
+    <img src="imagenes/muchos chicos con con una computadora.jpg" alt="" style="width: 320px;">
+  </picture>
+  <picture>
+    <source media="(max-width: 600px)" srcset="imagenes/chica para fondo.webp">
+    <source media="(max-width: 1024px)" srcset="imagenes/chica para fondo.webp">
+    <img src="imagenes/chica para fondo.webp" alt="" style="width: 314px;">
+  </picture>
+  </div>
+  <br>
+  <br>
+<div>
+  <p class="miniherotexto">Trabajamos para transformar la tecnología en una herramienta de inclusión y desarrollo sostenible. Mediante la recuperación de equipos y programas educativos, dotamos a las futuras generaciones de las habilidades digitales necesarias para el mundo actual, promoviendo la reducción del impacto ambiental.</p>
+</div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-marca">
+        <div class="footer-logo">Fundación <span>Desarrollo</span></div>
+        <p>Recuperamos, reparamos y redistribuimos tecnología en desuso para acortar la brecha digital y promover la economía circular.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Institución</h4>
+        <ul>
+          <li><a href="sobre nosotros.html">Quiénes somos</a></li>
+          <li><a href="sobre nosotros.html">Cómo trabajamos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Acción</h4>
+        <ul>
+          <li><a href="dona.html">Donar equipos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Fundación Desarrollo. Todos los derechos reservados.</span>
+      <div class="footer-redes">
+        <a href="#" class="red-social">📘</a>
+        <a href="#" class="red-social">📸</a>
+        <a href="#" class="red-social">💼</a>
+        <a href="#" class="red-social">▶️</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

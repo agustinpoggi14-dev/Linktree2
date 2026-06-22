@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doná – Fundación Desarrollo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+      <link rel="icon"  href="imagenes/logo solo.png" type="image/png">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+:root {
+  --azul:#222DE3;
+  --celeste:#67C6F0;
+  --azuloscuro:#06097A;
+  --blanco:#FFFFFF;
+  --negro:#000000;
+  --azuloscuro2:#0C2038;
+  --gris: #555555;
+  --contraste: #75F791;
+  --naranja: #cc8220;
+  --naranjaoscuro: #5e3b0e;
+
+  --fondo-blanco: #ffffff;     
+  --fondo-gris-claro: #e0e1dd;  
+  --fondo-oscuro-bloque: #1b263b; 
+
+
+  --color-accion: #778da9;   
+  
+
+  --texto-titulos: #0d1b2a;     
+  --texto-parrafos: #334155;    
+  --texto-blanco: #ffffff;      
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*--------------NAV-----------------------------------------------------*/
+    nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #fff;
+      padding: 60px 70px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 4px solid;
+     border-bottom-color: var(--azul);
+     transition: top 0.4s ease;
+    }
+
+    nav > a img {
+      display: block;
+      width: 150px !important;
+      max-width: 38vw;
+      height: auto !important;
+    }
+
+    .nav-logo span {
+      color: var(--blanco);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: var(--negro);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.4s;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 20px;
+    }
+
+    .nav-links li a:hover {
+      color: var(--azuloscuro);
+      background-color: #00000011;
+      
+    }
+
+
+.adonar {
+  padding: 10px;
+  background-color: var(--azul);
+  border-radius: 5px;
+  color: var(--blanco) !important;
+}
+.adonar:hover {
+  background-color: #191818;
+  color: #333af6
+}
+    /* ---- HERO ---- */
+    .hero {
+      display: flex;
+      gap: 0;
+      min-height: 520px;
+    }
+    .hero-texto {
+      background-color: var(--azuloscuro2);
+      padding: 80px 72px;
+      display: flex;
+      flex: 1 1 50%;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--azul);
+      margin-bottom: 20px;
+    }
+    .hero-titulo {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--blanco);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+    .hero-titulo span { color: var(--azuloscuro2); }
+    .hero-desc {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.8;
+      max-width: 420px;
+      margin-bottom: 40px;
+    }
+    .btn-donar-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--azuloscuro);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.25s, transform 0.15s;
+      width: fit-content;
+    }
+    .btn-donar-hero:hover { color: #0C2038;background-color: #FFFFFF; transform: translateY(-2px); }
+    .btn-donar-hero svg { width: 18px; height: 18px; }
+
+    .hero-imagen {
+      flex: 1 1 50%;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .hero-imagen-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(15,30,48,0.35), transparent);
+    }
+
+    /* ---- MÉTRICAS ---- */
+    .metricas {
+      background-color: var(--azul);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .metrica-item {
+      flex: 1 1 33.333%;
+      padding: 40px 48px;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+    .metrica-item:last-child { border-right: none; }
+    .metrica-numero {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--blanco);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .metrica-numero span { color: var(--verde); }
+    .metrica-label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 1px;
+    }
+
+    /* ---- IMPACTO VISUAL ---- */
+    .impacto-section {
+      padding: 96px 72px;
+      background-color: #fff;
+    }
+    .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--azul);
+      margin-bottom: 12px;
+    }
+    .section-titulo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--negro);
+      margin-bottom: 56px;
+      max-width: 480px;
+      line-height: 1.2;
+    }
+    .impacto-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      background-color: #e5e7eb;
+    }
+    .impacto-card {
+      flex: 1 1 calc(33.333% - 2px);
+      background-color: #fff;
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .impacto-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: var(--azul);
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.35s ease;
+    }
+    .impacto-card:hover::before { transform: scaleY(1); }
+    .impacto-icono {
+      width: 52px;
+      height: 52px;
+      background-color: #EFF6FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .impacto-icono svg { width: 26px; height: 26px; color: var(--azul); }
+    .impacto-monto {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--azul);
+      margin-bottom: 8px;
+    }
+    .impacto-titulo-card {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--negro);
+      margin-bottom: 10px;
+    }
+    .impacto-desc-card {
+      font-size: 0.87rem;
+      color: var(--gris);
+      line-height: 1.7;
+    }
+
+    /* ---- GALERÍA ---- */
+    .galeria-section {
+      padding: 0 72px 96px;
+      background-color: #fff;
+    }
+    .galeria-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .galeria-img {
+      flex: 1 1 calc(25% - 3px);
+      min-height: 220px;
+      overflow: hidden;
+      background-color: #d1d5db;
+    }
+    .galeria-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .galeria-img:hover img { transform: scale(1.04); }
+    .galeria-img.grande {
+      flex-basis: calc(50% - 3px);
+      min-height: 443px;
+    }
+
+    /* ---- CTA FINAL ---- */
+    .cta-final {
+      background-color: var(--fondo);
+      padding: 96px 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 64px;
+      border-top: 1px solid #e5e7eb;
+    }
+    .cta-texto { max-width: 540px; }
+    .cta-texto h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .cta-texto p {
+      font-size: 0.97rem;
+      color: var(--gris);
+      line-height: 1.8;
+    }
+    .btn-donar-cta {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--azul);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      padding: 18px 44px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.25s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .btn-donar-cta:hover { background-color: #1d4ed8; transform: translateY(-2px); }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background-color: var(--azuloscuro2);
+      padding: 64px 48px 32px;
+    }
+    .footer-inner {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1.5px solid rgba(255,255,255,0.1);
+    }
+    .footer-marca { flex: 1.5; min-width: 220px; }
+    .footer-logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--blanco);
+      margin-bottom: 14px;
+    }
+    .footer-logo span { color: var(--verde); }
+    .footer-marca p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+    .footer-col { flex: 1; min-width: 140px; }
+    .footer-col h4 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 18px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 12px; }
+    .footer-col ul li a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--verde); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-copy { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+    .footer-redes { display: flex; gap: 14px; }
+    .red-social {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+    }
+    .red-social:hover { background-color: var(--azul); }
+
+    /* ---- OVERLAY MODAL ---- */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10,20,40,0.75);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.abierto { display: flex; }
+
+    .modal-box {
+      background: #fff;
+      width: 100%;
+      max-width: 520px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 48px;
+      position: relative;
+      animation: slideUp 0.3s ease;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-cerrar {
+      position: absolute;
+      top: 20px; right: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--gris);
+      padding: 4px;
+      transition: color 0.2s;
+    }
+    .modal-cerrar:hover { color: var(--negro); }
+    .modal-cerrar svg { width: 22px; height: 22px; }
+
+    .modal-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--verde);
+      margin-bottom: 10px;
+    }
+    .modal-titulo {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--negro);
+      margin-bottom: 8px;
+    }
+    .modal-subtitulo {
+      font-size: 0.9rem;
+      color: var(--gris);
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .modal-label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gris);
+      margin-bottom: 10px;
+    }
+
+    .montos-rapidos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .monto-btn {
+      flex: 1 1 calc(25% - 8px);
+      padding: 12px 0;
+      border: 2px solid #e5e7eb;
+      background: #fff;
+      color: var(--negro);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .monto-btn:hover { border-color: var(--azul); color: var(--azul); }
+    .monto-btn.seleccionado { border-color: var(--azul); background: #EFF6FF; color: var(--azul); }
+
+    .input-monto-wrap {
+      position: relative;
+      margin-bottom: 32px;
+    }
+    .input-monto-wrap span {
+      position: absolute;
+      left: 14px; top: 50%;
+      transform: translateY(-50%);
+      font-weight: 600;
+      color: var(--gris);
+      font-size: 1rem;
+    }
+    .input-monto {
+      width: 100%;
+      padding: 14px 14px 14px 36px;
+      border: 2px solid #e5e7eb;
+      font-size: 1rem;
+      color: var(--negro);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .input-monto:focus { border-color: var(--azul); }
+
+    .resultado-impacto {
+      display: none;
+      background-color: #EFF6FF;
+      border-left: 4px solid var(--azul);
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+    .resultado-impacto.visible { display: block; }
+    .resultado-impacto p {
+      font-size: 0.9rem;
+      color: var(--azuloscuro);
+      line-height: 1.7;
+    }
+    .resultado-impacto strong { color: var(--azul); }
+
+    .divisor { height: 1px; background: #e5e7eb; margin: 28px 0; }
+
+    .modal-acciones {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn-confirmar {
+      width: 100%;
+      padding: 16px;
+      background-color: var(--azul);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.15s;
+    }
+    .btn-confirmar:hover { background-color: var(--azuloscuro2); transform: translateY(-1px); }
+    .btn-calcular {
+      width: 100%;
+      padding: 14px;
+      background-color: transparent;
+      color: var(--azul);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 2px solid var(--azul);
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn-calcular:hover { background-color: #EFF6FF; }
+
+    /* ---- PANTALLA GRACIAS ---- */
+    .gracias-screen {
+      display: none;
+      text-align: center;
+      padding: 16px 0;
+    }
+    .gracias-screen.visible { display: block; }
+    .gracias-icono {
+      width: 72px;
+      height: 72px;
+      background-color: #DCFCE7;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    .gracias-icono svg { width: 36px; height: 36px; color: #16a34a; }
+    .gracias-screen h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .gracias-screen p {
+      font-size: 0.95rem;
+      color: var(--gris);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .btn-volver {
+      display: inline-block;
+      padding: 14px 36px;
+      background-color: var(--azul);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn-volver:hover { background-color: #1d4ed8; }
+
+    @media (max-width: 992px) {
+      nav {
+        padding: 14px 24px;
+        height: auto;
+        min-height: 78px;
+        flex-wrap: wrap;
+      }
+
+      .menu-toggle {
+        display: block;
+        margin-left: auto;
+        line-height: 1;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        padding-top: 12px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        width: 100%;
+        text-align: center;
+      }
+
+      .nav-links li a {
+        display: block;
+        padding: 13px 10px;
+        font-size: 1rem;
+        letter-spacing: 0;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-texto {
+        padding: 64px 7%;
+      }
+
+      .hero-imagen {
+        min-height: 320px;
+      }
+
+      .metricas,
+      .impacto-grid {
+        flex-direction: column;
+      }
+
+      .metrica-item,
+      .impacto-card {
+        flex-basis: 100%;
+      }
+
+      .metrica-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+      }
+
+      .impacto-section,
+      .galeria-section,
+      .cta-final {
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+
+      .galeria-grid {
+        flex-wrap: wrap;
+      }
+
+      .galeria-img,
+      .galeria-img.grande {
+        flex-basis: calc(50% - 3px);
+        min-height: 220px;
+      }
+
+      .cta-final {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 12px 16px;
+        min-height: 70px;
+      }
+
+      nav > a img {
+        width: 118px !important;
+      }
+
+      .hero-texto {
+        padding: 48px 20px;
+      }
+
+      .hero-titulo {
+        font-size: 2rem;
+      }
+
+      .hero-desc,
+      .cta-texto p {
+        font-size: 0.95rem;
+      }
+
+      .btn-donar-hero,
+      .btn-donar-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
+        white-space: normal;
+      }
+
+      .impacto-section,
+      .galeria-section,
+      .cta-final {
+        padding: 48px 20px;
+      }
+
+      .section-titulo,
+      .cta-texto h2 {
+        font-size: 1.6rem;
+      }
+
+      .galeria-grid {
+        flex-direction: column;
+      }
+
+      .galeria-img,
+      .galeria-img.grande {
+        flex-basis: 100%;
+      }
+
+      .modal-overlay {
+        padding: 16px;
+      }
+
+      .modal-box {
+        padding: 36px 20px 24px;
+        max-height: 88vh;
+      }
+
+      .montos-rapidos {
+        flex-wrap: wrap;
+      }
+
+      .monto-btn {
+        flex-basis: calc(50% - 8px);
+      }
+
+      footer {
+        padding: 48px 28px 28px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+/* ========================================================= */
+/* --- PARCHE DE CORRECCIÓN PARA PANTALLAS DE COMPU --- */
+/* ========================================================= */
+
+nav a img, .nav img, header img {
+    height: 120px !important; 
+    width: 150px !important;  
+    background: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important;
+}
+
+
+nav a[href="dona.html"], 
+nav a[href="donacion.html"],
+.linkgaleria, 
+.btn-donar {
+    background-color: #0056b3 !important; 
+    color: white !important;
+    transition: background-color 0.3s ease;
+}
+
+
+nav a[href="dona.html"]:hover, 
+nav a[href="donacion.html"]:hover,
+.linkgaleria:hover, 
+.btn-donar:hover {
+    background-color: #000000 !important; 
+    color: white !important;
+}
+
+
+
+.menu-toggle, .hamburguesa, .nav-toggle, #menu-icon {
+    display: none !important; 
+}
+
+</style>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav>
+<a href="index.html"> <img src="imagenes/logo completo.png" class="aimagenlogo"></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre nosotros.html">Sobre nosotros</a></li>
+      <li><a href="Proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="dona.html" class="adonar">DONÁ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-texto">
+      <p class="hero-eyebrow">Hacé la diferencia</p>
+      <h1 class="hero-titulo">Tu donación<br>conecta a alguien<br>con el <span>futuro</span></h1>
+      <p class="hero-desc">Cada peso que aportás recupera una computadora, capacita a una persona y acorta la brecha digital en las comunidades que más lo necesitan.</p>
+      <button class="btn-donar-hero" onclick="abrirModal()">
+        Doná ahora
+      </button>
+    </div>
+    <div class="hero-imagen">
+      <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=900&auto=format&fit=crop" alt="Persona usando una computadora recuperada">
+      <div class="hero-imagen-overlay"></div>
+    </div>
+  </section>
+  <!-- ============ IMPACTO REAL ============ -->
+  <section class="impacto-section">
+    <p class="section-eyebrow">¿A dónde va tu donación?</p>
+    <h2 class="section-titulo">Cada monto transforma una realidad</h2>
+    <div class="impacto-grid">
+      <div class="impacto-card">
+        <div class="impacto-monto">$2.500</div>
+        <div class="impacto-titulo-card">Piezas de reparación</div>
+        <p class="impacto-desc-card">Cubre los insumos necesarios para reparar una computadora en desuso y devolverla al circuito educativo.</p>
+      </div>
+      <div class="impacto-card">
+        <div class="impacto-monto">$5.000</div>
+        <div class="impacto-titulo-card">Taller de formación</div>
+        <p class="impacto-desc-card">Financia un taller de alfabetización digital de cuatro horas para un grupo de jóvenes o adultos mayores.</p>
+      </div>
+      <div class="impacto-card">
+        <div class="impacto-monto">$12.000</div>
+        <div class="impacto-titulo-card">Aula equipada</div>
+        <p class="impacto-desc-card">Equipa un salón con computadoras reacondicionadas para que una escuela pública tenga su primera sala de informática.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="galeria-section">
+    <div class="galeria-grid">
+      <div class="galeria-img grande">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop" alt="Taller de reparación">
+      </div>
+      <div class="galeria-img">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop" alt="Estudiantes en clase">
+      </div>
+      <div class="galeria-img">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop" alt="Equipo de trabajo">
+      </div>
+      <div class="galeria-img">
+        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&auto=format&fit=crop" alt="Entrega de equipos">
+      </div>
+      <div class="galeria-img">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&auto=format&fit=crop" alt="Comunidad">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-final">
+    <div class="cta-texto">
+      <h2>¿Listo para sumar al cambio?</h2>
+      <p>Tu aporte, grande o pequeño, hace posible que alguien que nunca tuvo acceso a una computadora pueda estudiar, trabajar y proyectarse. Calculá tu impacto y decidí cuánto querés donar.</p>
+    </div>
+    <button class="btn-donar-cta" onclick="abrirModal()">
+      Calculá tu impacto
+    </button>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-marca">
+        <div class="footer-logo">Fundación <span>Desarrollo</span></div>
+        <p>Recuperamos, reparamos y redistribuimos tecnología en desuso para acortar la brecha digital y promover la economía circular.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Institución</h4>
+        <ul>
+          <li><a href="sobre nosotros.html">Quiénes somos</a></li>
+          <li><a href="sobre nosotros.html">Cómo trabajamos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Acción</h4>
+        <ul>
+          <li><a href="dona.html">Donar equipos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos de uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Fundación Desarrollo. Todos los derechos reservados.</span>
+      <div class="footer-redes">
+        <a href="#" class="red-social">📘</a>
+        <a href="#" class="red-social">📸</a>
+        <a href="#" class="red-social">💼</a>
+        <a href="#" class="red-social">▶️</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL CALCULADORA ============ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+
+      <!-- Pantalla calculadora -->
+      <div id="calculadoraScreen">
+        <button class="modal-cerrar" onclick="cerrarModal()" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <p class="modal-eyebrow">Calculadora de impacto</p>
+        <h2 class="modal-titulo">¿Cuánto querés donar?</h2>
+        <p class="modal-subtitulo">Elegí un monto o escribí el tuyo. Te mostramos exactamente qué hace posible tu donación.</p>
+
+        <label class="modal-label">Montos sugeridos</label>
+        <div class="montos-rapidos">
+          <button class="monto-btn" data-monto="1000" onclick="seleccionarMonto(1000, this)">$1.000</button>
+          <button class="monto-btn" data-monto="2500" onclick="seleccionarMonto(2500, this)">$2.500</button>
+          <button class="monto-btn" data-monto="5000" onclick="seleccionarMonto(5000, this)">$5.000</button>
+          <button class="monto-btn" data-monto="12000" onclick="seleccionarMonto(12000, this)">$12.000</button>
+        </div>
+
+        <label class="modal-label" for="inputMonto">O escribí un monto</label>
+        <div class="input-monto-wrap">
+          <span>$</span>
+          <input type="number" class="input-monto" id="inputMonto" placeholder="0" min="1"
+                 oninput="sincronizarInput(this.value)">
+        </div>
+
+        <div class="resultado-impacto" id="resultadoImpacto">
+          <p id="textoImpacto"></p>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="modal-acciones">
+          <button class="btn-calcular" onclick="calcularImpacto()">Ver impacto de mi donación</button>
+          <button class="btn-confirmar" onclick="hacerDonacion()">Confirmar donación</button>
+        </div>
+      </div>
+
+      <!-- Pantalla gracias -->
+      <div class="gracias-screen" id="graciasScreen">
+        <div class="gracias-icono">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2>¡Gracias por donar!</h2>
+        <p id="graciasTexto">Tu aporte hace posible que alguien más tenga acceso a la tecnología y la educación que merece.</p>
+        <button class="btn-volver" onclick="cerrarModal()"><a href="index.html" style="list-style-type: none;text-decoration: none;color: var(--blanco);">Volver al inicio</a></button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
