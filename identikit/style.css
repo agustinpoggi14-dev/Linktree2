@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+/*font-family: "Ultra", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/*  font-family: "Outfit", sans-serif;*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*footer*/
+.footer {
+  margin-bottom: 10px;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: #06071b;
+color: #90acd0;
+margin-top: 10px;
+}
+.footer2 {
+text-align: center;
+padding-top: 25px;
+padding-bottom: 34px;
+background-color: #06071b;
+color: #90acd0;
+}
+
+/*navegacion*/
+
+.ulnavegacion li {
+display: inline;
+margin-right: 15px;
+}
+.ulnavegacion a {
+    background-color: #0d1b2a;
+    padding: 10px 4px;
+    display: inline-block;
+    text-decoration: none;
+}
+.ulnavegacion {
+    text-align: right;
+
+}
+.ulnavegacion a:hover {
+    background-color: #1b263b;
+}
+.ulnavegacion {
+background-color:#0d1b2a;
+text-align: right;
+padding: 10px;
+}
+
+
+/* index*/
+.bodyindex {
+background-color: #1b263b;
+width: 100%;
+width: 100%;
+    overflow-x: hidden;
+}
+
+
+  
+    .sectionindex {
+text-align: center;
+}
+h1{
+
+color: #90acd0;
+text-align: center;
+font-family: "Ultra", serif;
+font-weight: 300;
+margin: -10px;
+background-size: 500px;
+padding: 0.5%;
+color: #90acd0;
+}
+.h2index {
+  color:  #415a77;
+;
+}
+.pbienvenidos {
+    color: #415a77;
+    text-align: center;
+   font-size: 20px;
+font-family: "Outfit", sans-serif;
+  }
+
+.imgcentral {
+    border-radius: 10px;
+    width: 300px;
+}
+  .link {
+color: #415a77;
+font-family: "Outfit", sans-serif;
+  }
+  
+  .fotoperfil {
+     height: 450px;
+     width: 350px;
+  }
+  blockquote {
+text-align: center;
+color: #415a77;
+font-weight: 600;
+font-family: "Outfit", sans-serif;
+  }
+.sectionabajo { 
+text-align: center;
+background-color: #0d1b2a;
+}
+h2 {
+    text-align: center;
+     color: #90acd0;
+     font-family: "Outfit", sans-serif;
+     font-weight: 400;
+}
+  a{
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    color: #90acd0;
+  }
+.imgindex {
+    width: 60px;
+}
+.gift {
+    width: auto;
+}
+.champions {
+  color:  #4f6a8a;
+;
+}
+
+
+
+
+
+
+
+
+/*sobremihtml*/
+.bodysecundario {
+
+background-color: #223b68;
+text-align: center;
+}
+
+.sobremisection {
+    width: 65%;
+    height: 450px;
+    background-color: #1e2b43;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+  
+ }
+
+ .h1sobremi {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: #0d1b2a;
+ }
+ .h2sobremi {
+    color: #415a77;
+    font-size: 30px;
+    margin-top: 8%;
+ }
+ .foto {
+width: 315px;
+height: 400px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+ }
+.psobremi {
+    width: 600px; 
+    text-align: center;
+    color: #e7d2b8;
+
+}
+ .parrafosobremi {
+    text-align: center;
+    margin-top: 7%;
+        padding: 20px;
+ }
+ 
+
+
+
+
+
+
+/*sobremifamilia */
+.sobremisectionfamilia {
+    width: 65%;
+    height: 65%;
+    background-color: #1e2b43;
+   height: 450px;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 267px;
+ }
+
+.h1sobremifamilia {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: #0d1b2a;
+ }
+ .h2sobremifamilia {
+    color: #415a77;
+    font-size: 30px;
+    margin-top: 10%;
+ }
+ .fotofamilia {
+width: 360px;
+height: 400px;
+    border-bottom-right-radius: 20px;
+    text-align: left;
+    margin-top: 10px;
+ }
+.sectionfamilia {
+    width:100%; 
+    text-align: center;
+    color: #e7d2b8;
+}
+ .psobremifamilia {
+    text-align: center;
+        padding: 20px;
+ }
+
+
+
+
+
+
+
+/*amigos*/
+.sectionamigos {
+    width: 65%;
+    height: 65%;
+    background-color: #1e2b43;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 267px;
+  
+ }
+.h1amigos {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: #0d1b2a;
+    
+ }
+ .h2sobremiamigos {
+    color: #415a77;
+    font-size: 30px;
+    margin-top: 10%;
+ }
+ .fotoamigos {
+width: 370px;
+height: 400px;
+    border-bottom-right-radius: 20px;
+    margin-top: 10px;
+ }
+.sobremiparrafoamigos {
+    width: 600px; 
+    text-align: center;
+    color: #e7d2b8;
+}
+ .pamigos {
+    text-align: center;
+    padding: 20px;
+ }
+
+.sectionsobremivolver {
+    text-align: center;
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* tabla*/
+ div {
+    box-shadow: #000;
+    border: 1000px;
+ }
+
+.celebracion {
+  width: 100%;
+}
+.bodytabla {
+  background-image: url(./juego/imagenes/background\ champions.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table
+ {
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  border-color: rgb(98, 53, 231);
+  border-style: double;
+  border-radius: 7px;
+  border: 100%;
+ }
+
+.titulo {
+background-color: #003aa7;
+padding: 20px;
+
+}
+.contenido {
+  background-color: #3f68b4;
+ 
+}
+.camino {
+  padding: 20px;
+ }
+
+ .psgcity {
+  width: 70px;
+  margin: 0 auto;
+  margin-left: 20px;
+  object-fit: fill;
+ }
+ .madrid {
+  width: 90px;
+  margin-left: 10px;
+   object-fit: fill;
+ }
+ .chelbayern {
+  width: 120px;
+   object-fit: fill;
+ }
+
+ .liverpool {
+  width: 80px;
+  margin-left: 15px;
+   object-fit: fill;
+ }
+ 
+
+
+
+ /*juego*/
+.bodyjuego {
+  background-image: url(./juego/imagenes/background\ champions.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.h1juego{
+background-color: #02010a; 
+color: #0711d5;
+margin-left: 0;
+margin-right: 0;
+width: 100%;
+display: block; 
+    box-sizing: border-box;
+}
+
+.h2juego {
+  color: #9db9ed;
+  margin-top: 20px;
+}
+.pjuego {
+  font-size: 30px; 
+  display: inline-block; 
+  background-color: rgb(165, 175, 243);
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+
+
+
+/*ganaste*/
+.bodyganaste {
+  background-image: url(./juego/imagenes/background\ champions.jpg);
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+.h1ganaste {
+color: #90acd0;
+background-color: #13273d;
+}
+.h2ganaste {
+color: #90acd0;
+margin: 8px;
+}
+
+
+
+
+/*PLAYLIST*/
+ .aside{
+ background-color: #293854;
+ width: 25%;
+ text-align: center; }
+ 
+.aside li {
+ list-style-type: none;
+}
+.divcontenedor {
+background-color: #14283d;
+margin-top: 10.2px;
+       margin-top: 0;
+    padding-top: 20px;
+}
+ .main, .aside {
+display: inline-block;
+ vertical-align: top;
+ height: 80vh;
+ }
+.main {
+ background-color: #243046;
+width: 70%;
+text-align: center; 
+border-width: 5px;
+border-color: #90acd0;
+border-style: inset;
+}
